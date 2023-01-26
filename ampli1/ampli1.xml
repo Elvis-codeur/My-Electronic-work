@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Elvis\3D Objects\Electronique\KICAD\KICAD 6\ampli1\ampli1.kicad_sch</source>
+    <date>25/04/2022 14:32:43</date>
+    <tool>Eeschema (6.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ampli1.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10u</value>
+      <footprint>Capacitor_THT:CP_Radial_D10.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6d26888f-5186-4fda-84bd-940683dd16f3</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10u</value>
+      <footprint>Capacitor_THT:CP_Radial_D10.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fbd91ca1-da46-429c-b500-a4b1f6f0c68a</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1u</value>
+      <footprint>Capacitor_THT:CP_Radial_D10.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be8a9b9d-fe64-438a-bc47-5b65d44e5ad8</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>220u</value>
+      <footprint>Capacitor_THT:CP_Radial_D18.0mm_P7.50mm</footprint>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>044b902f-1de3-4863-a9cd-e052b53f126c</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>1u</value>
+      <footprint>Capacitor_THT:CP_Radial_D10.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7bc2176-54d5-444e-8992-b21296482f17</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Spice_Model">sin(0 6 20k 0 0)</field>
+        <field name="Spice_Netlist_Enabled">Y</field>
+        <field name="Spice_Primitive">I</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Spice_Primitive" value="I"/>
+      <property name="Spice_Model" value="sin(0 6 20k 0 0)"/>
+      <property name="Spice_Netlist_Enabled" value="Y"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>06d8bd70-59bd-4926-9ba0-6d7f7d3196e9</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Spice_Model">47k</field>
+        <field name="Spice_Netlist_Enabled">Y</field>
+        <field name="Spice_Primitive">R</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Spice_Primitive" value="R"/>
+      <property name="Spice_Model" value="47k"/>
+      <property name="Spice_Netlist_Enabled" value="Y"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b92111e1-7fbe-4239-b612-668367ec4ca8</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>BC547</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC550-D.pdf</datasheet>
+      <fields>
+        <field name="Spice_Lib_File">E:\models_ugr\modelos_subckt\spice_complete\BJTN.LIB</field>
+        <field name="Spice_Model">BC547</field>
+        <field name="Spice_Netlist_Enabled">Y</field>
+        <field name="Spice_Primitive">Q</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="BC547" description="0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"/>
+      <property name="Spice_Primitive" value="Q"/>
+      <property name="Spice_Model" value="BC547"/>
+      <property name="Spice_Netlist_Enabled" value="Y"/>
+      <property name="Spice_Lib_File" value="E:\models_ugr\modelos_subckt\spice_complete\BJTN.LIB"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d26686a2-7129-465d-bf56-75479874af70</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>BC547</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC550-D.pdf</datasheet>
+      <fields>
+        <field name="Spice_Lib_File">E:\models_ugr\modelos_subckt\spice_complete\BJTN.LIB</field>
+        <field name="Spice_Model">BC547</field>
+        <field name="Spice_Netlist_Enabled">Y</field>
+        <field name="Spice_Primitive">Q</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="BC547" description="0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"/>
+      <property name="Spice_Primitive" value="Q"/>
+      <property name="Spice_Model" value="BC547"/>
+      <property name="Spice_Netlist_Enabled" value="Y"/>
+      <property name="Spice_Lib_File" value="E:\models_ugr\modelos_subckt\spice_complete\BJTN.LIB"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>55f62029-af66-4168-97aa-c791fab7ce0f</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>150k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7cb02633-318d-4e28-af88-612ab58488dc</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>270k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>333cbd17-8276-4ad4-a4f0-a62ab75c2780</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>4.7k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cbaff787-8b90-43cf-8f05-a6d7cb985dbc</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>390</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f590c6d4-80a6-44ff-a940-bff1f393fc1c</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e4f16e5-5fa9-4342-accf-5ea7beeb6cd5</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>47k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>467473df-c6d6-48a9-8d48-7c7f74bc0e1e</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>6.8k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5ccbcb09-c89b-4898-868d-adfeabf5c3ab</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8a7bfb9-1271-4612-bf8f-1889fb64e66b</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>100k</value>
+      <footprint>Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal</footprint>
+      <fields>
+        <field name="Spice_Model">rv</field>
+        <field name="Spice_Netlist_Enabled">Y</field>
+        <field name="Spice_Primitive">X</field>
+      </fields>
+      <libsource lib="Device" part="R_Potentiometer_US" description="Potentiometer, US symbol"/>
+      <property name="Spice_Primitive" value="X"/>
+      <property name="Spice_Model" value="rv"/>
+      <property name="Spice_Netlist_Enabled" value="Y"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>067536f0-a65b-49d4-a01f-c90c2a820f77</tstamps>
+    </comp>
+    <comp ref="V1">
+      <value>VSOURCE</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Spice_Model">dc 12 </field>
+        <field name="Spice_Netlist_Enabled">Y</field>
+        <field name="Spice_Primitive">V</field>
+      </fields>
+      <libsource lib="pspice" part="VSOURCE" description="Voltage source symbol for simulation only"/>
+      <property name="Spice_Primitive" value="V"/>
+      <property name="Spice_Model" value="dc 12 "/>
+      <property name="Spice_Netlist_Enabled" value="Y"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ampli1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79957cbb-11e6-4747-83d5-819de249737d</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Potentiometer_US">
+      <description>Potentiometer, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_Potentiometer_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BC547">
+      <description>0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BC550-D.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC547</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BC550-D.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="E" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="pspice" part="VSOURCE">
+      <description>Voltage source symbol for simulation only</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">V</field>
+        <field name="Value">VSOURCE</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E1" type="input"/>
+        <pin num="2" name="E2" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>D:\PROGRAMMS\KICAD\6.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>D:\PROGRAMMS\KICAD\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>D:\PROGRAMMS\KICAD\6.0\share\kicad\symbols\/Transistor_BJT.kicad_sym</uri>
+    </library>
+    <library logical="pspice">
+      <uri>D:\PROGRAMMS\KICAD\6.0\share\kicad\symbols\/pspice.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="V1" pin="2" pinfunction="E2" pintype="input"/>
+    </net>
+    <net code="2" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="R10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R10" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(C3-Pad2)">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="E" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="E" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="C" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(C5-Pad2)">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1" pinfunction="C" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(R10-Pad3)">
+      <node ref="R10" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="VCC">
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="V1" pin="1" pinfunction="E1" pintype="input"/>
+    </net>
+  </nets>
+</export>

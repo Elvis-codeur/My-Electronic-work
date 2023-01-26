@@ -1,0 +1,266 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Step down Converter"
+Date ""
+Rev ""
+Comp "Glodie Technologies"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 613205A8
+P 900 1700
+F 0 "J1" H 1008 1881 50  0000 C CNN
+F 1 "entrée" H 1008 1790 50  0000 C CNN
+F 2 "Mes_modules:Bornier_2pts_L10mm_W8mm_P5mm" H 900 1700 50  0001 C CNN
+F 3 "~" H 900 1700 50  0001 C CNN
+	1    900  1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61320775
+P 1800 1750
+F 0 "C1" H 1915 1796 50  0000 L CNN
+F 1 "10uF" H 1915 1705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 1838 1600 50  0001 C CNN
+F 3 "~" H 1800 1750 50  0001 C CNN
+	1    1800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 61320D19
+P 2450 1750
+F 0 "C2" H 2565 1796 50  0000 L CNN
+F 1 "100nF" H 2565 1705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 2488 1600 50  0001 C CNN
+F 3 "~" H 2450 1750 50  0001 C CNN
+	1    2450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1700 1100 1050
+Wire Wire Line
+	1100 1050 1800 1050
+Wire Wire Line
+	2450 1050 2450 1600
+Wire Wire Line
+	1800 1600 1800 1050
+Connection ~ 1800 1050
+Wire Wire Line
+	1800 1050 2450 1050
+Wire Wire Line
+	1100 1800 1100 2500
+Wire Wire Line
+	1100 2500 1800 2500
+Wire Wire Line
+	1800 2500 1800 1900
+Wire Wire Line
+	1800 2500 2450 2500
+Wire Wire Line
+	2450 2500 2450 1900
+Connection ~ 1800 2500
+$Comp
+L Regulator_Switching:TPS565208 U1
+U 1 1 6132180F
+P 3750 1750
+F 0 "U1" H 3750 2117 50  0000 C CNN
+F 1 "TPS565208" H 3750 2026 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering" H 3800 1500 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps565208.pdf" H 3750 1750 50  0001 C CNN
+	1    3750 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1050 3100 1050
+Wire Wire Line
+	3350 1050 3350 1650
+Connection ~ 2450 1050
+Wire Wire Line
+	3350 1850 3100 1850
+Wire Wire Line
+	3100 1850 3100 1050
+Connection ~ 3100 1050
+Wire Wire Line
+	3100 1050 3350 1050
+$Comp
+L power:GND #PWR02
+U 1 1 613221CF
+P 3200 2600
+F 0 "#PWR02" H 3200 2350 50  0001 C CNN
+F 1 "GND" H 3205 2427 50  0000 C CNN
+F 2 "" H 3200 2600 50  0001 C CNN
+F 3 "" H 3200 2600 50  0001 C CNN
+	1    3200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2600 3200 2500
+Wire Wire Line
+	3200 2500 2450 2500
+Connection ~ 2450 2500
+$Comp
+L Device:C C3
+U 1 1 613229F3
+P 5150 1750
+F 0 "C3" H 5265 1796 50  0000 L CNN
+F 1 "100nF" H 5265 1705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 5188 1600 50  0001 C CNN
+F 3 "~" H 5150 1750 50  0001 C CNN
+	1    5150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 61323376
+P 5750 1550
+F 0 "L1" H 5750 1765 50  0000 C CNN
+F 1 "4.7uF" H 5750 1674 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L12.0mm_D5.0mm_P15.24mm_Horizontal_Fastron_MISC" H 5750 1550 50  0001 C CNN
+F 3 "~" H 5750 1550 50  0001 C CNN
+	1    5750 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1650 4150 1550
+Wire Wire Line
+	4150 1550 5150 1550
+Wire Wire Line
+	4150 1750 4950 1750
+Wire Wire Line
+	4950 1750 4950 1900
+Wire Wire Line
+	4950 1900 5150 1900
+Wire Wire Line
+	5150 1600 5150 1550
+Connection ~ 5150 1550
+Wire Wire Line
+	5150 1550 5500 1550
+Wire Wire Line
+	3750 2050 3750 2500
+Wire Wire Line
+	3750 2500 3200 2500
+Connection ~ 3200 2500
+$Comp
+L Device:R R1
+U 1 1 61324CDE
+P 6450 1700
+F 0 "R1" H 6520 1746 50  0000 L CNN
+F 1 "75" H 6520 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6380 1700 50  0001 C CNN
+F 3 "~" H 6450 1700 50  0001 C CNN
+	1    6450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61324EE6
+P 6450 2200
+F 0 "R2" H 6520 2246 50  0000 L CNN
+F 1 "10k" H 6520 2155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6380 2200 50  0001 C CNN
+F 3 "~" H 6450 2200 50  0001 C CNN
+	1    6450 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1550 6450 1550
+Wire Wire Line
+	3750 2500 6450 2500
+Wire Wire Line
+	6450 2500 6450 2350
+Connection ~ 3750 2500
+Wire Wire Line
+	6450 1850 6450 2000
+Wire Wire Line
+	4150 1850 4750 1850
+Wire Wire Line
+	4750 1850 4750 2000
+Wire Wire Line
+	4750 2000 6450 2000
+Connection ~ 6450 2000
+Wire Wire Line
+	6450 2000 6450 2050
+$Comp
+L Device:C C5
+U 1 1 61326F58
+P 7200 2000
+F 0 "C5" H 7315 2046 50  0000 L CNN
+F 1 "22uF" H 7315 1955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 7238 1850 50  0001 C CNN
+F 3 "~" H 7200 2000 50  0001 C CNN
+	1    7200 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1550 6850 1550
+Wire Wire Line
+	7200 1550 7200 1850
+Connection ~ 6450 1550
+Wire Wire Line
+	7200 2500 7200 2150
+Connection ~ 6450 2500
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 61327FA7
+P 8050 2000
+F 0 "J2" H 8022 1882 50  0000 R CNN
+F 1 "Sortie" H 8022 1973 50  0000 R CNN
+F 2 "Mes_modules:Bornier_2pts_L10mm_W8mm_P5mm" H 8050 2000 50  0001 C CNN
+F 3 "~" H 8050 2000 50  0001 C CNN
+	1    8050 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 1550 7850 1550
+Wire Wire Line
+	7850 1550 7850 1900
+Connection ~ 7200 1550
+Wire Wire Line
+	7850 2000 7850 2500
+Wire Wire Line
+	7850 2500 7200 2500
+Connection ~ 7200 2500
+$Comp
+L power:VCC #PWR01
+U 1 1 613294CF
+P 2450 1050
+F 0 "#PWR01" H 2450 900 50  0001 C CNN
+F 1 "VCC" H 2465 1223 50  0000 C CNN
+F 2 "" H 2450 1050 50  0001 C CNN
+F 3 "" H 2450 1050 50  0001 C CNN
+	1    2450 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1850 6850 1550
+Connection ~ 6850 1550
+Wire Wire Line
+	6850 1550 7200 1550
+Wire Wire Line
+	6450 2500 6850 2500
+$Comp
+L Device:C C4
+U 1 1 6132F78B
+P 6850 2000
+F 0 "C4" H 6965 2046 50  0000 L CNN
+F 1 "22uF" H 6965 1955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 6888 1850 50  0001 C CNN
+F 3 "~" H 6850 2000 50  0001 C CNN
+	1    6850 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2150 6850 2500
+Connection ~ 6850 2500
+Wire Wire Line
+	6850 2500 7200 2500
+$EndSCHEMATC

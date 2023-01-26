@@ -1,0 +1,29 @@
+.title KiCad schematic
+.include "C:\Users\Elvis\3D Objects\Electronique\KICAD\KICAD 6\brushless_final\10TQ045.lib"
+.include "C:\Users\Elvis\3D Objects\Electronique\KICAD\KICAD 6\brushless_final\MTB75N05H.lib"
+XQ1 Net-_C2-Pad1_ cmd GND MTB75N05H
+R1 vout GND 40
+C1 vout GND 2.5u
+L1 Net-_L1-Pad1_ Net-_C2-Pad1_ 10m
+V1 cmd GND pulse(0 5 2n 2n 2n 950n 1u)
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 2.5u
+L2 Net-_C2-Pad2_ vout 10m
+D1 Net-_C2-Pad2_ GND 10TQ045
+V2 Net-_L1-Pad1_ GND dc 12
+.save @r1[i]
+.save @c1[i]
+.save @l1[i]
+.save @v1[i]
+.save @c2[i]
+.save @l2[i]
+.save @d1[id]
+.save @v2[i]
+.save V(Net-_C2-Pad1_)
+.save V(Net-_C2-Pad2_)
+.save V(Net-_L1-Pad1_)
+.save V(cmd)
+.save V(vout)
+.tran 10u 2m 1m
+
+.end
+

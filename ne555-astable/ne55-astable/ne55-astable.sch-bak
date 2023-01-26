@@ -1,0 +1,258 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR0101
+U 1 1 614F6854
+P 3900 1900
+F 0 "#PWR0101" H 3900 1750 50  0001 C CNN
+F 1 "VCC" H 3915 2073 50  0000 C CNN
+F 2 "" H 3900 1900 50  0001 C CNN
+F 3 "" H 3900 1900 50  0001 C CNN
+	1    3900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1900 3900 2100
+$Comp
+L power:GND #PWR0102
+U 1 1 614F6D9E
+P 3900 3700
+F 0 "#PWR0102" H 3900 3450 50  0001 C CNN
+F 1 "GND" H 3905 3527 50  0000 C CNN
+F 2 "" H 3900 3700 50  0001 C CNN
+F 3 "" H 3900 3700 50  0001 C CNN
+	1    3900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3300 3900 3700
+Connection ~ 3900 2100
+Wire Wire Line
+	4400 3100 4400 4150
+Wire Wire Line
+	4400 4150 2950 4150
+Wire Wire Line
+	2950 4150 2950 2700
+Wire Wire Line
+	2950 2700 3400 2700
+Wire Wire Line
+	4400 4150 4750 4150
+Connection ~ 4400 4150
+$Comp
+L Device:R RA1
+U 1 1 614F9369
+P 4750 3200
+F 0 "RA1" H 4820 3246 50  0000 L CNN
+F 1 "30" H 4820 3155 50  0000 L CNN
+F 2 "" V 4680 3200 50  0001 C CNN
+F 3 "~" H 4750 3200 50  0001 C CNN
+	1    4750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R RB1
+U 1 1 614F967F
+P 4750 3750
+F 0 "RB1" H 4820 3796 50  0000 L CNN
+F 1 "1k" H 4820 3705 50  0000 L CNN
+F 2 "" V 4680 3750 50  0001 C CNN
+F 3 "~" H 4750 3750 50  0001 C CNN
+	1    4750 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3900 4750 4150
+Wire Wire Line
+	4750 3350 4750 3500
+Wire Wire Line
+	4400 2900 4550 2900
+Wire Wire Line
+	4550 2900 4550 3500
+Wire Wire Line
+	4550 3500 4750 3500
+Connection ~ 4750 3500
+Wire Wire Line
+	4750 3500 4750 3600
+Wire Wire Line
+	4750 2950 4750 3050
+Wire Wire Line
+	4750 2950 4600 2950
+$Comp
+L Device:CP1 C1
+U 1 1 614FEDE9
+P 4200 2250
+F 0 "C1" H 4315 2296 50  0000 L CNN
+F 1 "0.01u" H 4315 2205 50  0000 L CNN
+F 2 "" H 4200 2250 50  0001 C CNN
+F 3 "~" H 4200 2250 50  0001 C CNN
+	1    4200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 6150021E
+P 4200 2400
+F 0 "#PWR03" H 4200 2150 50  0001 C CNN
+F 1 "GND" H 4205 2227 50  0000 C CNN
+F 2 "" H 4200 2400 50  0001 C CNN
+F 3 "" H 4200 2400 50  0001 C CNN
+	1    4200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 615016DD
+P 4750 4300
+F 0 "C2" H 4865 4346 50  0000 L CNN
+F 1 "1.5n" H 4865 4255 50  0000 L CNN
+F 2 "" H 4750 4300 50  0001 C CNN
+F 3 "~" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 4150
+$Comp
+L power:GND #PWR04
+U 1 1 615021CD
+P 4750 4450
+F 0 "#PWR04" H 4750 4200 50  0001 C CNN
+F 1 "GND" H 4755 4277 50  0000 C CNN
+F 2 "" H 4750 4450 50  0001 C CNN
+F 3 "" H 4750 4450 50  0001 C CNN
+	1    4750 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 2100
+$Comp
+L Device:Battery_Cell v1
+U 1 1 6169AC69
+P 1850 2800
+F 0 "v1" H 1968 2896 50  0000 L CNN
+F 1 "DC 5" H 1968 2805 50  0000 L CNN
+F 2 "" V 1850 2860 50  0001 C CNN
+F 3 "~" V 1850 2860 50  0001 C CNN
+	1    1850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6169B0FF
+P 1850 3400
+F 0 "#PWR02" H 1850 3150 50  0001 C CNN
+F 1 "GND" H 1855 3227 50  0000 C CNN
+F 2 "" H 1850 3400 50  0001 C CNN
+F 3 "" H 1850 3400 50  0001 C CNN
+	1    1850 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2300 1850 2600
+Wire Wire Line
+	1850 2900 1850 3400
+Text Notes 5850 3100 2    50   ~ 0
+.tran 1n  110u\nset ngbehavior=ki
+Text GLabel 5500 2700 2    50   Input ~ 0
+sortie
+Wire Wire Line
+	3900 2100 4200 2100
+Wire Wire Line
+	3900 2100 3900 2500
+Wire Wire Line
+	3400 3100 3000 3100
+Wire Wire Line
+	3000 3100 3000 2100
+Wire Wire Line
+	3000 2100 3900 2100
+$Comp
+L Device:CP1 C3
+U 1 1 617C090F
+P 3250 3450
+F 0 "C3" H 3365 3496 50  0000 L CNN
+F 1 "0.01u" H 3365 3405 50  0000 L CNN
+F 2 "" H 3250 3450 50  0001 C CNN
+F 3 "~" H 3250 3450 50  0001 C CNN
+	1    3250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 617C0915
+P 3250 3600
+F 0 "#PWR05" H 3250 3350 50  0001 C CNN
+F 1 "GND" H 3255 3427 50  0000 C CNN
+F 2 "" H 3250 3600 50  0001 C CNN
+F 3 "" H 3250 3600 50  0001 C CNN
+	1    3250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2900 3250 2900
+Wire Wire Line
+	3250 2900 3250 3300
+Wire Wire Line
+	4400 2700 4800 2700
+$Comp
+L ne55-astable-rescue:NE555D-Timer U1
+U 1 1 6187A4AE
+P 3900 2900
+F 0 "U1" H 3900 3481 50  0000 C CNN
+F 1 "NE555D-Timer" H 3900 3390 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4750 2500 50  0001 C CNN
+F 3 "" H 4750 2500 50  0001 C CNN
+F 4 "X" H 3900 2900 50  0001 C CNN "Spice_Primitive"
+F 5 "NE555" H 3900 2900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3900 2900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "C:\\Users\\Elvis\\Documents\\KICAD\\lib\\sub\\NE555.sub" H 3900 2900 50  0001 C CNN "Spice_Lib_File"
+	1    3900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R RB2
+U 1 1 6186A5C3
+P 4800 2300
+F 0 "RB2" H 4870 2346 50  0000 L CNN
+F 1 "1k" H 4870 2255 50  0000 L CNN
+F 2 "" V 4730 2300 50  0001 C CNN
+F 3 "~" H 4800 2300 50  0001 C CNN
+	1    4800 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2100 4800 2150
+Wire Wire Line
+	4200 2100 4600 2100
+Connection ~ 4600 2100
+Wire Wire Line
+	4600 2100 4800 2100
+Wire Wire Line
+	4800 2450 4800 2700
+Connection ~ 4800 2700
+Wire Wire Line
+	4800 2700 5500 2700
+Wire Wire Line
+	4600 2100 4600 2950
+$Comp
+L power:VCC #PWR01
+U 1 1 6195272E
+P 1850 2300
+F 0 "#PWR01" H 1850 2150 50  0001 C CNN
+F 1 "VCC" H 1865 2473 50  0000 C CNN
+F 2 "" H 1850 2300 50  0001 C CNN
+F 3 "" H 1850 2300 50  0001 C CNN
+	1    1850 2300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

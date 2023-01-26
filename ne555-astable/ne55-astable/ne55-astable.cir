@@ -1,0 +1,13 @@
+.title KiCad schematic
+.include "C:\Users\Elvis\Documents\KICAD\lib\sub\NE555.sub"
+RA1 VCC Net-_RA1-Pad2_ 30
+RB1 Net-_RA1-Pad2_ Net-_C2-Pad1_ 1k
+C1 VCC GND 0.01u
+C2 Net-_C2-Pad1_ GND 1.5n
+v1 VCC GND DC 5
+C3 Net-_C3-Pad1_ GND 0.01u
+XU1 GND Net-_C2-Pad1_ sortie VCC Net-_C3-Pad1_ Net-_C2-Pad1_ Net-_RA1-Pad2_ VCC NE555
+RB2 VCC sortie 1k
+*.tran 10u 32ms
+.tran 1n  110u
+.end

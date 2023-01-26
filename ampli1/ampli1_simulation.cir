@@ -1,0 +1,60 @@
+.title KiCad schematic
+.include "E:\models_ugr\modelos_subckt\spice_complete\BJTN.LIB"
+C4 Net-_C4-Pad1_ GND 220u
+R5 Net-_R1-Pad2_ GND 1k
+V2 /in GND sin(0 1 1k)
+C2 Net-_C2-Pad1_ GND 10u
+R2 Net-_C2-Pad1_ Net-_Q1-Pad1_ 270k
+C1 Net-_C1-Pad1_ /in 10u
+Q2 Net-_C5-Pad1_ Net-_Q1-Pad1_ Net-_C4-Pad1_ BC547
+R9 Net-_C3-Pad1_ Net-_R6-Pad1_ 2000k
+R6 Net-_R6-Pad1_ Net-_C5-Pad1_ 47k
+R8 VCC Net-_C2-Pad1_ 1k
+R7 Net-_C2-Pad1_ Net-_C5-Pad1_ 6.8k
+R10 GND out 47k
+C5 Net-_C5-Pad1_ out 1u
+V1 VCC GND dc 12
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 1u
+Q1 Net-_Q1-Pad1_ Net-_C1-Pad1_ Net-_C3-Pad2_ BC547
+R1 Net-_C1-Pad1_ Net-_R1-Pad2_ 150k
+R4 Net-_C4-Pad1_ Net-_R1-Pad2_ 390
+R3 Net-_C3-Pad2_ GND 4.7k
+.save @c4[i]
+.save @r5[i]
+.save @v2[i]
+.save @c2[i]
+.save @r2[i]
+.save @c1[i]
+.save @q2[ib]
+.save @q2[ic]
+.save @q2[ie]
+.save @r9[i]
+.save @r6[i]
+.save @r8[i]
+.save @r7[i]
+.save @r10[i]
+.save @c5[i]
+.save @v1[i]
+.save @c3[i]
+.save @q1[ib]
+.save @q1[ic]
+.save @q1[ie]
+.save @r1[i]
+.save @r4[i]
+.save @r3[i]
+.save V(/in)
+.save V(Net-_C1-Pad1_)
+.save V(Net-_C2-Pad1_)
+.save V(Net-_C3-Pad1_)
+.save V(Net-_C3-Pad2_)
+.save V(Net-_C4-Pad1_)
+.save V(Net-_C5-Pad1_)
+.save V(Net-_Q1-Pad1_)
+.save V(Net-_R1-Pad2_)
+.save V(Net-_R6-Pad1_)
+.save V(VCC)
+.save V(out)
+.tran 10u 70m uic
+
+.end
+

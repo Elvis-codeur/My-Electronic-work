@@ -1,0 +1,158 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM741 U1
+U 1 1 61797EFB
+P 3400 1950
+F 0 "U1" H 3744 1996 50  0000 L CNN
+F 1 "LM741" H 3744 1905 50  0000 L CNN
+F 2 "" H 3450 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 3550 2100 50  0001 C CNN
+F 4 "X" H 3400 1950 50  0001 C CNN "Spice_Primitive"
+F 5 "AOP" H 3400 1950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3400 1950 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/elvis/Documents/aop.lib" H 3400 1950 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 2 7 4 6 " H 3400 1950 50  0001 C CNN "Spice_Node_Sequence"
+	1    3400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2450 2800 2050
+Wire Wire Line
+	2800 2050 3100 2050
+Wire Wire Line
+	3700 1950 3950 1950
+Wire Wire Line
+	3950 1950 3950 2450
+Text GLabel 3950 1950 2    50   Input ~ 0
+vs
+Text Notes 3700 1700 0    50   ~ 0
+.tran 10u 2m uic\n
+$Comp
+L power:VDD #PWR06
+U 1 1 6179D3C4
+P 3300 1650
+F 0 "#PWR06" H 3300 1500 50  0001 C CNN
+F 1 "VDD" H 3315 1823 50  0000 C CNN
+F 2 "" H 3300 1650 50  0001 C CNN
+F 3 "" H 3300 1650 50  0001 C CNN
+	1    3300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VEE #PWR07
+U 1 1 6179D922
+P 3300 2250
+F 0 "#PWR07" H 3300 2100 50  0001 C CNN
+F 1 "VEE" H 3315 2423 50  0000 C CNN
+F 2 "" H 3300 2250 50  0001 C CNN
+F 3 "" H 3300 2250 50  0001 C CNN
+	1    3300 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 617A77C4
+P 2450 2250
+F 0 "#PWR05" H 2450 2000 50  0001 C CNN
+F 1 "GND" H 2455 2077 50  0000 C CNN
+F 2 "" H 2450 2250 50  0001 C CNN
+F 3 "" H 2450 2250 50  0001 C CNN
+	1    2450 2250
+	1    0    0    -1  
+$EndComp
+Text GLabel 2050 1850 0    50   Input ~ 0
+ve
+Wire Wire Line
+	2050 1850 2450 1850
+$Comp
+L Simulation_SPICE:VSIN V3
+U 1 1 617ABD82
+P 2450 2050
+F 0 "V3" H 2580 2141 50  0000 L CNN
+F 1 "VSIN" H 2580 2050 50  0000 L CNN
+F 2 "" H 2450 2050 50  0001 C CNN
+F 3 "~" H 2450 2050 50  0001 C CNN
+F 4 "Y" H 2450 2050 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 2450 2050 50  0001 L CNN "Spice_Primitive"
+F 6 "sin(0 1 1k)" H 2580 1959 50  0000 L CNN "Spice_Model"
+	1    2450 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 1850
+Wire Wire Line
+	2800 2450 3950 2450
+$Comp
+L Device:Battery_Cell V1
+U 1 1 617ADBE9
+P 1600 1650
+F 0 "V1" H 1718 1746 50  0000 L CNN
+F 1 "dc 15" H 1718 1655 50  0000 L CNN
+F 2 "" V 1600 1710 50  0001 C CNN
+F 3 "~" V 1600 1710 50  0001 C CNN
+	1    1600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell V2
+U 1 1 617AEEEE
+P 1600 1950
+F 0 "V2" H 1718 2046 50  0000 L CNN
+F 1 "dc 15" H 1718 1955 50  0000 L CNN
+F 2 "" V 1600 2010 50  0001 C CNN
+F 3 "~" V 1600 2010 50  0001 C CNN
+	1    1600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 617B2FF0
+P 1300 1750
+F 0 "#PWR02" H 1300 1500 50  0001 C CNN
+F 1 "GND" V 1305 1622 50  0000 R CNN
+F 2 "" H 1300 1750 50  0001 C CNN
+F 3 "" H 1300 1750 50  0001 C CNN
+	1    1300 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR03
+U 1 1 617B3A99
+P 1600 1450
+F 0 "#PWR03" H 1600 1300 50  0001 C CNN
+F 1 "VDD" H 1615 1623 50  0000 C CNN
+F 2 "" H 1600 1450 50  0001 C CNN
+F 3 "" H 1600 1450 50  0001 C CNN
+	1    1600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VEE #PWR04
+U 1 1 617B437D
+P 1600 2050
+F 0 "#PWR04" H 1600 1900 50  0001 C CNN
+F 1 "VEE" H 1615 2223 50  0000 C CNN
+F 2 "" H 1600 2050 50  0001 C CNN
+F 3 "" H 1600 2050 50  0001 C CNN
+	1    1600 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 1750 1600 1750
+Connection ~ 1600 1750
+Wire Wire Line
+	2450 1850 3100 1850
+$EndSCHEMATC

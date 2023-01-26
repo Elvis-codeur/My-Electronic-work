@@ -1,0 +1,25 @@
+<Qucs Schematic 0.0.20>
+<Properties>
+  <View=0,-70,800,800,1,0,70>
+  <Grid=10,10,0>
+  <DataSet=inverter.dat>
+  <DataDisplay=inverter.sch>
+  <OpenDisplay=1>
+  <Script=inverter.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Titre>
+  <FrameText1=Auteur :>
+  <FrameText2=Date :>
+  <FrameText3=Version :>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+</Diagrams>
+<Paintings>
+</Paintings>

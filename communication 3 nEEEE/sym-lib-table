@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ne55-astable-rescue)(type Legacy)(uri ${KIPRJMOD}/ne55-astable-rescue.lib)(options "")(descr ""))
+)

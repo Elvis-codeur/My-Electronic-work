@@ -1,0 +1,172 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R1
+U 1 1 619D9D9E
+P 2150 2550
+F 0 "R1" V 1945 2550 50  0000 C CNN
+F 1 "68" V 2036 2550 50  0000 C CNN
+F 2 "" V 2190 2540 50  0001 C CNN
+F 3 "~" H 2150 2550 50  0001 C CNN
+	1    2150 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 619DA11A
+P 2700 3200
+F 0 "C1" H 2815 3246 50  0000 L CNN
+F 1 "10n" H 2815 3155 50  0000 L CNN
+F 2 "" H 2738 3050 50  0001 C CNN
+F 3 "~" H 2700 3200 50  0001 C CNN
+	1    2700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 619DA5F7
+P 3150 3250
+F 0 "L1" H 3203 3296 50  0000 L CNN
+F 1 "1u" H 3203 3205 50  0000 L CNN
+F 2 "" H 3150 3250 50  0001 C CNN
+F 3 "~" H 3150 3250 50  0001 C CNN
+	1    3150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N914 D1
+U 1 1 619DA934
+P 3600 2550
+F 0 "D1" H 3600 2333 50  0000 C CNN
+F 1 "1N914" H 3600 2424 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3600 2375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 3600 2550 50  0001 C CNN
+F 4 "D" H 3600 2550 50  0001 C CNN "Spice_Primitive"
+F 5 "DN914" H 3600 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3600 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "1N914.lib" H 3600 2550 50  0001 C CNN "Spice_Lib_File"
+	1    3600 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 619DB0B5
+P 4150 3200
+F 0 "R2" H 4218 3246 50  0000 L CNN
+F 1 "20k" H 4218 3155 50  0000 L CNN
+F 2 "" V 4190 3190 50  0001 C CNN
+F 3 "~" H 4150 3200 50  0001 C CNN
+	1    4150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 619DB6D8
+P 4800 3200
+F 0 "C2" H 4915 3246 50  0000 L CNN
+F 1 "100p" H 4915 3155 50  0000 L CNN
+F 2 "" H 4838 3050 50  0001 C CNN
+F 3 "~" H 4800 3200 50  0001 C CNN
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2550 2700 2550
+Wire Wire Line
+	2700 3050 2700 2550
+Connection ~ 2700 2550
+Wire Wire Line
+	2700 2550 3150 2550
+Connection ~ 3150 2550
+Wire Wire Line
+	3150 2550 3450 2550
+Wire Wire Line
+	3150 2550 3150 3100
+Wire Wire Line
+	1350 3950 2700 3950
+Wire Wire Line
+	2700 3950 2700 3350
+Wire Wire Line
+	2700 3950 3150 3950
+Wire Wire Line
+	3150 3950 3150 3400
+Connection ~ 2700 3950
+Wire Wire Line
+	3150 3950 4150 3950
+Wire Wire Line
+	4150 3950 4150 3350
+Connection ~ 3150 3950
+Wire Wire Line
+	4150 3950 4800 3950
+Wire Wire Line
+	4800 3950 4800 3350
+Connection ~ 4150 3950
+Wire Wire Line
+	3750 2550 4150 2550
+Wire Wire Line
+	4150 2550 4150 3050
+Wire Wire Line
+	4150 2550 4800 2550
+Wire Wire Line
+	4800 2550 4800 3050
+Connection ~ 4150 2550
+Text GLabel 1150 2550 0    50   Input ~ 0
+FM_IN
+Text GLabel 3150 2400 1    50   Input ~ 0
+AM_OUT
+Text GLabel 5000 2550 2    50   Input ~ 0
+OUT
+Wire Wire Line
+	5000 2550 4800 2550
+Connection ~ 4800 2550
+Wire Wire Line
+	3150 2400 3150 2550
+Text Notes 4150 2150 0    50   ~ 0
+.tran 1n 20u uic
+$Comp
+L pspice:VSOURCE V1
+U 1 1 619DF1C0
+P 1350 3250
+F 0 "V1" H 1578 3296 50  0000 L CNN
+F 1 "sffm(0 5 1.5915Meg 5 20k)" H 1578 3205 50  0000 L CNN
+F 2 "" H 1350 3250 50  0001 C CNN
+F 3 "~" H 1350 3250 50  0001 C CNN
+	1    1350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2550 1350 2550
+Wire Wire Line
+	1350 3550 1350 3950
+Wire Wire Line
+	1350 2950 1350 2550
+Connection ~ 1350 2550
+Wire Wire Line
+	1350 2550 2000 2550
+$Comp
+L power:GND #PWR0101
+U 1 1 619E0587
+P 3150 4300
+F 0 "#PWR0101" H 3150 4050 50  0001 C CNN
+F 1 "GND" H 3155 4127 50  0000 C CNN
+F 2 "" H 3150 4300 50  0001 C CNN
+F 3 "" H 3150 4300 50  0001 C CNN
+	1    3150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4300 3150 3950
+$EndSCHEMATC

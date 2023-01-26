@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ne55-missing-pulse-detector-rescue)(type Legacy)(uri ${KIPRJMOD}/ne55-missing-pulse-detector-rescue.lib)(options "")(descr ""))
+)

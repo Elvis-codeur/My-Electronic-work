@@ -1,0 +1,13 @@
+1
+9
+.tran 100u 20m uic{return}{return}
+3
+2
+R9
+I
+1
+/in
+V
+1
+out
+V

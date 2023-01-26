@@ -1,0 +1,7 @@
+Circuit: .title KiCad schematic
+
+Error on line 9 : u1 gnd net-_c2-pad1_ sortie a net-_c3-pad1_ net-_c2-pad1_ net-_ra1-pad2_ a ne555p
+	 Unable to find definition of model "a"
+	
+	*  Unknown parameter "net-_c3-pad1_"
+Fatal Error: URC instance U1: Length must be positive definite.

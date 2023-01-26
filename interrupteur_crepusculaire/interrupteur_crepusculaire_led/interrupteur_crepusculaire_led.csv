@@ -1,0 +1,14 @@
+Id;Référence;Boîtier;Quantité;Désignation;Fournisseur et réf
+1;R5;R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal;1;1M;
+2;C1;C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal;1;10nF;
+3;D1;LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm;1;LED;
+4;J1;Bornier_2pts_L10mm_W8mm_P5mm;1;Entrée;
+5;Q1;TO-39-3;1;2N2219;
+6;R1;R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal;1;10K;
+7;R2;LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm;1;LDR03;
+8;R3,R4;R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal;2;3.3K;
+9;R6;R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal;1;220R;
+10;R7;R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal;1;2.2K;
+11;R8;R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal;1;560R;
+12;RV1;Potentiometer_ACP_CA9-H5_Horizontal;1;R_POT;
+13;U1;DIP-8_W7.62mm_LongPads;1;LM741;

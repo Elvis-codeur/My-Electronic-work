@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ne555-pulse-width-modulation-rescue)(type Legacy)(uri ${KIPRJMOD}/ne555-pulse-width-modulation-rescue.lib)(options "")(descr ""))
+)

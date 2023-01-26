@@ -1,0 +1,11 @@
+.title KiCad schematic
+RA1 a Net-_RA1-Pad2_ 5772
+RB1 Net-_RA1-Pad2_ Net-_C2-Pad1_ 11k
+C1 a GND 0.01u
+C2 Net-_C2-Pad1_ GND 1.5n
+v1 a GND DC 5
+C3 Net-_C3-Pad1_ GND 0.01u
+RB2 a sortie 1k
+U1 GND Net-_C2-Pad1_ sortie a Net-_C3-Pad1_ Net-_C2-Pad1_ Net-_RA1-Pad2_ a NE555P
+.tran 10u 32ms  uic 
+.end

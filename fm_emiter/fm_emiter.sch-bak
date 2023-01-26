@@ -1,0 +1,238 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 61A75544
+P 4150 1950
+F 0 "Q1" H 4341 1996 50  0000 L CNN
+F 1 "BC547" H 4341 1905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4350 1875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 4150 1950 50  0001 L CNN
+	1    4150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 61A75BFE
+P 3000 1500
+F 0 "R1" H 3068 1546 50  0000 L CNN
+F 1 "4.7k" H 3068 1455 50  0000 L CNN
+F 2 "" V 3040 1490 50  0001 C CNN
+F 3 "~" H 3000 1500 50  0001 C CNN
+	1    3000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61A7602A
+P 3000 2550
+F 0 "C1" H 3115 2596 50  0000 L CNN
+F 1 "0.001u" H 3115 2505 50  0000 L CNN
+F 2 "" H 3038 2400 50  0001 C CNN
+F 3 "~" H 3000 2550 50  0001 C CNN
+	1    3000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 61A762F1
+P 4250 1250
+F 0 "L1" V 4204 1328 50  0000 L CNN
+F 1 "0.1u" V 4295 1328 50  0000 L CNN
+F 2 "" H 4250 1250 50  0001 C CNN
+F 3 "~" H 4250 1250 50  0001 C CNN
+	1    4250 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Variable C2
+U 1 1 61A777CE
+P 4950 1250
+F 0 "C2" H 5065 1296 50  0000 L CNN
+F 1 "0-100pf" H 5065 1205 50  0000 L CNN
+F 2 "" H 4950 1250 50  0001 C CNN
+F 3 "~" H 4950 1250 50  0001 C CNN
+	1    4950 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 61A77CB1
+P 5350 1900
+F 0 "C3" H 5465 1946 50  0000 L CNN
+F 1 "22p-100pf" H 5465 1855 50  0000 L CNN
+F 2 "" H 5388 1750 50  0001 C CNN
+F 3 "~" H 5350 1900 50  0001 C CNN
+	1    5350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1350 3000 900 
+Wire Wire Line
+	3000 900  4250 900 
+Wire Wire Line
+	4250 900  4250 1000
+Wire Wire Line
+	4250 900  4950 900 
+Wire Wire Line
+	4950 900  4950 1100
+Connection ~ 4250 900 
+Wire Wire Line
+	4250 1500 4250 1650
+Wire Wire Line
+	3000 1650 3000 1950
+Wire Wire Line
+	3000 1950 3950 1950
+Wire Wire Line
+	3000 2400 3000 1950
+Connection ~ 3000 1950
+Wire Wire Line
+	3000 2700 3000 2950
+Wire Wire Line
+	3000 2950 4250 2950
+Wire Wire Line
+	4950 1650 4950 1400
+Connection ~ 4250 1650
+Wire Wire Line
+	4250 1650 4250 1750
+Wire Wire Line
+	5350 1650 5350 1750
+Wire Wire Line
+	4250 1650 4950 1650
+Connection ~ 4950 1650
+Wire Wire Line
+	4950 1650 5350 1650
+Wire Wire Line
+	5350 2050 5350 2300
+Wire Wire Line
+	5350 2300 4250 2300
+$Comp
+L Device:R_US R2
+U 1 1 61A796D4
+P 4250 2550
+F 0 "R2" H 4318 2596 50  0000 L CNN
+F 1 "330R" H 4318 2505 50  0000 L CNN
+F 2 "" V 4290 2540 50  0001 C CNN
+F 3 "~" H 4250 2550 50  0001 C CNN
+	1    4250 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2700 4250 2950
+Wire Wire Line
+	4250 2150 4250 2300
+Connection ~ 4250 2300
+Wire Wire Line
+	4250 2300 4250 2400
+$Comp
+L Device:Antenna AE1
+U 1 1 61A7A232
+P 5950 1150
+F 0 "AE1" H 6030 1139 50  0000 L CNN
+F 1 "Antenna" H 6030 1048 50  0000 L CNN
+F 2 "" H 5950 1150 50  0001 C CNN
+F 3 "~" H 5950 1150 50  0001 C CNN
+	1    5950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Microphone MK1
+U 1 1 61A7AF7F
+P 2100 2550
+F 0 "MK1" H 2230 2596 50  0000 L CNN
+F 1 "Microphone" H 2230 2505 50  0000 L CNN
+F 2 "" V 2100 2650 50  0001 C CNN
+F 3 "~" V 2100 2650 50  0001 C CNN
+	1    2100 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2350 2100 1950
+Wire Wire Line
+	2100 2750 2100 2950
+Wire Wire Line
+	5350 1650 5950 1650
+Wire Wire Line
+	5950 1650 5950 1350
+Connection ~ 5350 1650
+$Comp
+L power:VCC #PWR03
+U 1 1 61A7C2EC
+P 4250 900
+F 0 "#PWR03" H 4250 750 50  0001 C CNN
+F 1 "VCC" H 4265 1073 50  0000 C CNN
+F 2 "" H 4250 900 50  0001 C CNN
+F 3 "" H 4250 900 50  0001 C CNN
+	1    4250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 61A7C770
+P 4250 3100
+F 0 "#PWR04" H 4250 2850 50  0001 C CNN
+F 1 "GND" H 4255 2927 50  0000 C CNN
+F 2 "" H 4250 3100 50  0001 C CNN
+F 3 "" H 4250 3100 50  0001 C CNN
+	1    4250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3100 4250 2950
+Connection ~ 4250 2950
+$Comp
+L Device:Battery BT1
+U 1 1 61A7CF1F
+P 1350 2000
+F 0 "BT1" H 1458 2046 50  0000 L CNN
+F 1 "9v" H 1458 1955 50  0000 L CNN
+F 2 "" V 1350 2060 50  0001 C CNN
+F 3 "~" V 1350 2060 50  0001 C CNN
+	1    1350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 61A7D323
+P 1350 1300
+F 0 "#PWR01" H 1350 1150 50  0001 C CNN
+F 1 "VCC" H 1365 1473 50  0000 C CNN
+F 2 "" H 1350 1300 50  0001 C CNN
+F 3 "" H 1350 1300 50  0001 C CNN
+	1    1350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61A7D78F
+P 1350 2750
+F 0 "#PWR02" H 1350 2500 50  0001 C CNN
+F 1 "GND" H 1355 2577 50  0000 C CNN
+F 2 "" H 1350 2750 50  0001 C CNN
+F 3 "" H 1350 2750 50  0001 C CNN
+	1    1350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1300 1350 1800
+Wire Wire Line
+	1350 2750 1350 2200
+Wire Wire Line
+	2100 1950 3000 1950
+Wire Wire Line
+	2100 2950 3000 2950
+Connection ~ 3000 2950
+$EndSCHEMATC

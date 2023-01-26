@@ -1,0 +1,371 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 613B87FA
+P 3100 3200
+F 0 "R1" H 3170 3246 50  0000 L CNN
+F 1 "10K" H 3170 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3030 3200 50  0001 C CNN
+F 3 "~" H 3100 3200 50  0001 C CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 613B984F
+P 3750 4850
+F 0 "R4" H 3820 4896 50  0000 L CNN
+F 1 "3.3K" H 3820 4805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3680 4850 50  0001 C CNN
+F 3 "~" H 3750 4850 50  0001 C CNN
+	1    3750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 613BAA8B
+P 4450 4850
+F 0 "R5" V 4243 4850 50  0000 C CNN
+F 1 "2M" V 4334 4850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 4380 4850 50  0001 C CNN
+F 3 "~" H 4450 4850 50  0001 C CNN
+	1    4450 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 613BB193
+P 5950 4000
+F 0 "R6" V 5743 4000 50  0000 C CNN
+F 1 "220R" V 5834 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 5880 4000 50  0001 C CNN
+F 3 "~" H 5950 4000 50  0001 C CNN
+	1    5950 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 613BB4A0
+P 6600 3500
+F 0 "R8" H 6670 3546 50  0000 L CNN
+F 1 "560R" H 6670 3455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6530 3500 50  0001 C CNN
+F 3 "~" H 6600 3500 50  0001 C CNN
+	1    6600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 613BBC33
+P 6150 4450
+F 0 "R7" H 6220 4496 50  0000 L CNN
+F 1 "2.2k" H 6220 4405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6080 4450 50  0001 C CNN
+F 3 "~" H 6150 4450 50  0001 C CNN
+	1    6150 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3900 4050 4100
+Wire Wire Line
+	4050 4100 4300 4100
+$Comp
+L Device:R R3
+U 1 1 613B9690
+P 3750 3250
+F 0 "R3" H 3820 3296 50  0000 L CNN
+F 1 "3.3K" H 3820 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3680 3250 50  0001 C CNN
+F 3 "~" H 3750 3250 50  0001 C CNN
+	1    3750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3050 3750 3050
+Wire Wire Line
+	3750 3050 3750 3100
+Wire Wire Line
+	3750 5000 3100 5000
+Wire Wire Line
+	4300 4850 4200 4850
+Wire Wire Line
+	4200 3900 4300 3900
+Wire Wire Line
+	4600 4850 5550 4850
+Wire Wire Line
+	5550 4850 5550 4000
+Wire Wire Line
+	5550 4000 5800 4000
+Wire Wire Line
+	4900 4000 5550 4000
+Connection ~ 5550 4000
+Wire Wire Line
+	3750 3050 4250 3050
+Connection ~ 3750 3050
+$Comp
+L Device:CP C1
+U 1 1 613C2314
+P 5700 3300
+F 0 "C1" H 5818 3346 50  0000 L CNN
+F 1 "10nF" H 5818 3255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 5738 3150 50  0001 C CNN
+F 3 "~" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3150 5700 3050
+Connection ~ 3750 5000
+Wire Wire Line
+	5700 3050 6600 3050
+Wire Wire Line
+	6600 3050 6600 3350
+Connection ~ 5700 3050
+Wire Wire Line
+	6600 3650 6600 3800
+$Comp
+L Transistor_BJT:2N2219 Q1
+U 1 1 613C3651
+P 6500 4000
+F 0 "Q1" H 6690 4046 50  0000 L CNN
+F 1 "2N2219" H 6690 3955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 6700 3925 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 6500 4000 50  0001 L CNN
+F 4 "Q" H 6500 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "Q2N2222A" H 6500 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6500 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q2N2222A .lib" H 6500 4000 50  0001 C CNN "Spice_Lib_File"
+	1    6500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3450 5700 5000
+Connection ~ 5700 5000
+Wire Wire Line
+	5700 5000 4750 5000
+$Comp
+L power:VCC #PWR01
+U 1 1 613CB67E
+P 4250 2600
+F 0 "#PWR01" H 4250 2450 50  0001 C CNN
+F 1 "VCC" H 4265 2773 50  0000 C CNN
+F 2 "" H 4250 2600 50  0001 C CNN
+F 3 "" H 4250 2600 50  0001 C CNN
+	1    4250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2600 4250 3050
+Connection ~ 4250 3050
+Wire Wire Line
+	4250 3050 4500 3050
+$Comp
+L power:GND #PWR02
+U 1 1 613CC610
+P 4250 5550
+F 0 "#PWR02" H 4250 5300 50  0001 C CNN
+F 1 "GND" H 4255 5377 50  0000 C CNN
+F 2 "" H 4250 5550 50  0001 C CNN
+F 3 "" H 4250 5550 50  0001 C CNN
+	1    4250 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5550 4250 5000
+Connection ~ 4250 5000
+Wire Wire Line
+	4250 5000 3750 5000
+Wire Wire Line
+	5700 5000 6150 5000
+Wire Wire Line
+	6100 4000 6150 4000
+Wire Wire Line
+	6150 4300 6150 4000
+Connection ~ 6150 4000
+Wire Wire Line
+	6150 4000 6300 4000
+Wire Wire Line
+	6150 4600 6150 5000
+Connection ~ 6150 5000
+Wire Wire Line
+	6150 5000 6600 5000
+Connection ~ 4500 3050
+Wire Wire Line
+	4500 3050 5700 3050
+Wire Wire Line
+	4500 4300 4500 4600
+Wire Wire Line
+	4500 4600 4750 4600
+Wire Wire Line
+	4750 4600 4750 5000
+Connection ~ 4750 5000
+Wire Wire Line
+	4750 5000 4250 5000
+Wire Wire Line
+	4500 3050 4500 3700
+Wire Wire Line
+	4200 3900 4200 4500
+$Comp
+L pspice:VSOURCE V1
+U 1 1 618BE1FB
+P 1400 4050
+F 0 "V1" H 1628 4096 50  0000 L CNN
+F 1 "12" H 1628 4005 50  0000 L CNN
+F 2 "" H 1400 4050 50  0001 C CNN
+F 3 "~" H 1400 4050 50  0001 C CNN
+	1    1400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:VPULSE V2
+U 1 1 618BEB66
+P 2400 4700
+F 0 "V2" H 2530 4791 50  0000 L CNN
+F 1 "VPULSE" H 2530 4700 50  0000 L CNN
+F 2 "" H 2400 4700 50  0001 C CNN
+F 3 "~" H 2400 4700 50  0001 C CNN
+F 4 "Y" H 2400 4700 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 2400 4700 50  0001 L CNN "Spice_Primitive"
+F 6 "pulse(0 5 2n 2n 2n 1 20)" H 2530 4609 50  0000 L CNN "Spice_Model"
+	1    2400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 618BEF08
+P 1400 3750
+F 0 "#PWR03" H 1400 3600 50  0001 C CNN
+F 1 "VCC" H 1415 3923 50  0000 C CNN
+F 2 "" H 1400 3750 50  0001 C CNN
+F 3 "" H 1400 3750 50  0001 C CNN
+	1    1400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 618BF4F5
+P 1400 4350
+F 0 "#PWR04" H 1400 4100 50  0001 C CNN
+F 1 "GND" H 1405 4177 50  0000 C CNN
+F 2 "" H 1400 4350 50  0001 C CNN
+F 3 "" H 1400 4350 50  0001 C CNN
+	1    1400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 618BF881
+P 2400 4900
+F 0 "#PWR05" H 2400 4650 50  0001 C CNN
+F 1 "GND" H 2405 4727 50  0000 C CNN
+F 2 "" H 2400 4900 50  0001 C CNN
+F 3 "" H 2400 4900 50  0001 C CNN
+	1    2400 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4500 2800 4500
+Connection ~ 4200 4500
+Wire Wire Line
+	4200 4500 4200 4850
+Text Notes 6650 2850 0    50   ~ 0
+.tran 10m 5s
+Wire Wire Line
+	3100 3350 3100 5000
+$Comp
+L Amplifier_Operational:LM301 U1
+U 1 1 618C5E15
+P 4600 4000
+F 0 "U1" H 4944 4046 50  0000 L CNN
+F 1 "LM301" H 4944 3955 50  0000 L CNN
+F 2 "" H 4650 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm101a-n.pdf" H 4650 4150 50  0001 C CNN
+F 4 "X" H 4600 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "LM358" H 4600 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4600 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "lm358.mod" H 4600 4000 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 2 7 4 6" H 4600 4000 50  0001 C CNN "Spice_Node_Sequence"
+	1    4600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3900 4050 3900
+Wire Wire Line
+	3750 3900 3750 4700
+Text GLabel 2800 4250 1    50   Input ~ 0
+ve
+Wire Wire Line
+	2800 4250 2800 4500
+Connection ~ 2800 4500
+Wire Wire Line
+	2800 4500 4200 4500
+$Comp
+L Device:R_US R2
+U 1 1 618CAB13
+P 3750 3750
+F 0 "R2" H 3818 3796 50  0000 L CNN
+F 1 "10k" H 3818 3705 50  0000 L CNN
+F 2 "" V 3790 3740 50  0001 C CNN
+F 3 "~" H 3750 3750 50  0001 C CNN
+	1    3750 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 3900
+Wire Wire Line
+	3750 3400 3750 3600
+Connection ~ 6600 4300
+Wire Wire Line
+	6600 4300 6600 4400
+Wire Wire Line
+	6600 4200 6600 4300
+Wire Wire Line
+	6950 4300 6600 4300
+Text GLabel 6950 4300 2    50   Input ~ 0
+vs
+Wire Wire Line
+	6600 4700 6600 5000
+$Comp
+L Device:LED D1
+U 1 1 613CA126
+P 6600 4550
+F 0 "D1" V 6639 4432 50  0000 R CNN
+F 1 "LED" V 6548 4432 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm" H 6600 4550 50  0001 C CNN
+F 3 "~" H 6600 4550 50  0001 C CNN
+F 4 "D" H 6600 4550 50  0001 C CNN "Spice_Primitive"
+F 5 "DN3491" H 6600 4550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6600 4550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "diode.lib" H 6600 4550 50  0001 C CNN "Spice_Lib_File"
+	1    6600 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LTSPICEXVIIPowerProducts:LT3050 X1
+U 1 1 6194521D
+P 9250 3550
+F 0 "X1" H 9250 4415 50  0000 C CNN
+F 1 "LT3050" H 9250 4324 50  0000 C CNN
+F 2 "" V 9250 3550 50  0001 C CNN
+F 3 "www.analog.com/LT3050" V 9250 3550 50  0001 C CNN
+F 4 "X" H 9250 3550 50  0001 C CNN "Spice_Primitive"
+F 5 "LT3050*@ LT3050.sub" H 9250 3550 50  0001 L CNN "Spice_Model"
+F 6 " 100mA, Linear Regulator with Precision Current Limit and Diagnostic Output " V 9250 3550 50  0001 C CNN "Information"
+F 7 " Add directive : .lib  LT3050.sub " V 9250 3550 50  0001 C CNN "Advice"
+	1    9250 3550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,84 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 6150DB7D
+P 4750 1700
+F 0 "R1" V 4543 1700 50  0000 C CNN
+F 1 "330R" V 4634 1700 50  0000 C CNN
+F 2 "" V 4680 1700 50  0001 C CNN
+F 3 "~" H 4750 1700 50  0001 C CNN
+	1    4750 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 6150E8D1
+P 3600 2450
+F 0 "V1" H 3828 2496 50  0000 L CNN
+F 1 "VSOURCE" H 3828 2405 50  0000 L CNN
+F 2 "" H 3600 2450 50  0001 C CNN
+F 3 "~" H 3600 2450 50  0001 C CNN
+	1    3600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2150 3600 1700
+Wire Wire Line
+	3600 1700 4600 1700
+$Comp
+L Device:R R2
+U 1 1 6150F1BF
+P 5150 2450
+F 0 "R2" H 5220 2496 50  0000 L CNN
+F 1 "1K" H 5220 2405 50  0000 L CNN
+F 2 "" V 5080 2450 50  0001 C CNN
+F 3 "~" H 5150 2450 50  0001 C CNN
+	1    5150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6150F338
+P 5650 2450
+F 0 "R3" H 5720 2496 50  0000 L CNN
+F 1 "50R" H 5720 2405 50  0000 L CNN
+F 2 "" V 5580 2450 50  0001 C CNN
+F 3 "~" H 5650 2450 50  0001 C CNN
+	1    5650 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1700 5150 1700
+Wire Wire Line
+	5650 1700 5150 1700
+Connection ~ 5150 1700
+Wire Wire Line
+	3600 3300 3600 2750
+Wire Wire Line
+	3600 3300 5150 3300
+Wire Wire Line
+	5150 1700 5150 2300
+Wire Wire Line
+	5650 1700 5650 2300
+Wire Wire Line
+	5650 2600 5650 3300
+Wire Wire Line
+	5150 2600 5150 3300
+Connection ~ 5150 3300
+Wire Wire Line
+	5150 3300 5650 3300
+$EndSCHEMATC

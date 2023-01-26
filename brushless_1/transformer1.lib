@@ -1,0 +1,8 @@
+.SUBCKT IT1 1 2 3 4 Np=1 Ns=1
+* 1 inpl
+* 2 inm
+* 3 outpl
+* 4 outm
+E1 1 2 3 4 { Np/Ns }
+F1 3 4 E1 {-Np/Ns }
+.ENDS IT1

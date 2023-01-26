@@ -1,0 +1,11 @@
+.title KiCad schematic
+.include "1N914.lib"
+R1 AM_OUT FM_IN 68
+C1 AM_OUT GND 10n
+L1 AM_OUT GND 1u
+D1 OUT AM_OUT DN914
+R2 OUT GND 20k
+C2 OUT GND 100p
+V1 FM_IN GND sffm(0 5 1.5915Meg 5 20k)
+.tran 1n 20u uic 
+.end

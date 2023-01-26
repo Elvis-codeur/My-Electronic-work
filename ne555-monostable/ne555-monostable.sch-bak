@@ -1,0 +1,166 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ne555-monostable-rescue:NE555D-Timer U?
+U 1 1 61503431
+P 3250 2800
+F 0 "U?" H 3250 3382 50  0000 C CNN
+F 1 "NE555D" H 3250 3290 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4100 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4100 2400 50  0001 C CNN
+	1    3250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 61503C6B
+P 2100 2800
+F 0 "C?" V 1847 2800 50  0000 C CNN
+F 1 "CP1" V 1939 2800 50  0000 C CNN
+F 2 "" H 2100 2800 50  0001 C CNN
+F 3 "~" H 2100 2800 50  0001 C CNN
+	1    2100 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615043AA
+P 1800 2800
+F 0 "#PWR?" H 1800 2550 50  0001 C CNN
+F 1 "GND" V 1804 2671 50  0000 R CNN
+F 2 "" H 1800 2800 50  0001 C CNN
+F 3 "" H 1800 2800 50  0001 C CNN
+	1    1800 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 2600 2300 2600
+Wire Wire Line
+	2300 2600 2300 2200
+Text Label 800  2150 0    79   ~ 0
+Entrée(Input)
+Wire Wire Line
+	2750 2800 2250 2800
+Wire Wire Line
+	1950 2800 1800 2800
+Wire Wire Line
+	2750 3000 1400 3000
+Wire Wire Line
+	1400 3000 1400 1850
+Wire Wire Line
+	3250 1850 3250 2400
+Wire Wire Line
+	3250 1850 3750 1850
+Wire Wire Line
+	3750 1850 3750 2000
+Connection ~ 3250 1850
+$Comp
+L Device:R RL
+U 1 1 61506B4E
+P 3750 2150
+F 0 "RL" H 3820 2196 50  0000 L CNN
+F 1 "R" H 3820 2104 50  0000 L CNN
+F 2 "" V 3680 2150 50  0001 C CNN
+F 3 "~" H 3750 2150 50  0001 C CNN
+	1    3750 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2300 3750 2600
+Wire Wire Line
+	3750 2600 4500 2600
+Connection ~ 3750 2600
+Wire Wire Line
+	3750 2800 4000 2800
+Wire Wire Line
+	4000 2800 4000 3000
+Wire Wire Line
+	4000 3000 3750 3000
+$Comp
+L Device:R RA
+U 1 1 61508246
+P 2600 3350
+F 0 "RA" V 2392 3350 50  0000 C CNN
+F 1 "R" V 2484 3350 50  0000 C CNN
+F 2 "" V 2530 3350 50  0001 C CNN
+F 3 "~" H 2600 3350 50  0001 C CNN
+	1    2600 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 3000 1400 3350
+Wire Wire Line
+	1400 3350 2450 3350
+Connection ~ 1400 3000
+$Comp
+L power:GND #PWR?
+U 1 1 6150A063
+P 3250 3200
+F 0 "#PWR?" H 3250 2950 50  0001 C CNN
+F 1 "GND" H 3254 3026 50  0000 C CNN
+F 2 "" H 3250 3200 50  0001 C CNN
+F 3 "" H 3250 3200 50  0001 C CNN
+	1    3250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 6150A918
+P 4000 3550
+F 0 "C?" H 4115 3596 50  0000 L CNN
+F 1 "CP1" H 4115 3504 50  0000 L CNN
+F 2 "" H 4000 3550 50  0001 C CNN
+F 3 "~" H 4000 3550 50  0001 C CNN
+	1    4000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6150AF30
+P 4000 3700
+F 0 "#PWR?" H 4000 3450 50  0001 C CNN
+F 1 "GND" H 4004 3526 50  0000 C CNN
+F 2 "" H 4000 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0001 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3350 4000 3350
+Wire Wire Line
+	4000 3350 4000 3000
+Connection ~ 4000 3000
+Wire Wire Line
+	4000 3400 4000 3350
+Connection ~ 4000 3350
+$Comp
+L power:VCC #PWR?
+U 1 1 6150B92F
+P 3250 1700
+F 0 "#PWR?" H 3250 1550 50  0001 C CNN
+F 1 "VCC" H 3264 1875 50  0000 C CNN
+F 2 "" H 3250 1700 50  0001 C CNN
+F 3 "" H 3250 1700 50  0001 C CNN
+	1    3250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  2200 2300 2200
+Wire Wire Line
+	1400 1850 3250 1850
+Wire Wire Line
+	3250 1700 3250 1850
+$EndSCHEMATC

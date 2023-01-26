@@ -1,0 +1,26 @@
+*SRC=54ACT00;54ACT00;CMOS;54ACTxx;2 input NAND gate
+*SYM=NAND2
+*54ACT00 QUAD 2-INPUT NAND GATE
+***
+.subckt 54act00 in1 in2 out
+*FAMILY TTLin TTLin TTLout
+
+*pinout J14A 1 2 3;4 5 6;9 10 8;12 13 11:VCC=14 GND=7
+.model adc_buff adc_bridge(in_low = 0.3 in_high = 3.5)
+.model ls_nand d_nand(rise_delay=5.5n fall_delay=4.8n)
+.model dac1 dac_bridge(out_low = 0.7 out_high = 3.5 out_undef = 2.2
++input_load = 5.0e-12 t_rise = 50e-9
++t_fall = 20e-9)
+
+
+abridge2 [in1] [8] adc_buff
+abridge3 [in2] [9] adc_buff
+
+anand [8 9] 10 ls_nand 
+
+abridge1 [10] [out] dac1
+
+
+.ends
+*
+*

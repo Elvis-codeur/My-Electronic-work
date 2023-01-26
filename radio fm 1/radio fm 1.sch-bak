@@ -1,0 +1,304 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Ma radio fm"
+Date ""
+Rev "1.0"
+Comp "Glodie Technologies"
+Comment1 "Agbalenyo Elvis"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Audio:LM386 U1
+U 1 1 60932CE4
+P 5600 3450
+F 0 "U1" H 5944 3496 50  0000 L CNN
+F 1 "LM386" H 5944 3405 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W10.16mm" H 5700 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 5800 3650 50  0001 C CNN
+	1    5600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60933AD0
+P 6100 3900
+F 0 "C3" H 6215 3946 50  0000 L CNN
+F 1 "0.1u" H 6215 3855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 6138 3750 50  0001 C CNN
+F 3 "~" H 6100 3900 50  0001 C CNN
+	1    6100 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS1
+U 1 1 609346F8
+P 7050 3450
+F 0 "LS1" H 7220 3446 50  0000 L CNN
+F 1 "Speaker" H 7220 3355 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7050 3250 50  0001 C CNN
+F 3 "~" H 7040 3400 50  0001 C CNN
+	1    7050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C4
+U 1 1 60935BA2
+P 6350 3450
+F 0 "C4" V 6098 3450 50  0000 C CNN
+F 1 "220u" V 6189 3450 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 6350 3450 50  0001 C CNN
+F 3 "~" H 6350 3450 50  0001 C CNN
+	1    6350 3450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 60936A63
+P 4700 3600
+F 0 "RV1" H 4631 3646 50  0000 R CNN
+F 1 "10k" H 4631 3555 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal" H 4700 3600 50  0001 C CNN
+F 3 "~" H 4700 3600 50  0001 C CNN
+	1    4700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Variable C1
+U 1 1 609399F5
+P 2600 2750
+F 0 "C1" H 2715 2796 50  0000 L CNN
+F 1 "22p" H 2715 2705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 2600 2750 50  0001 C CNN
+F 3 "~" H 2600 2750 50  0001 C CNN
+	1    2600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 6093A569
+P 3300 2650
+F 0 "L1" V 3254 2728 50  0000 L CNN
+F 1 "INDUCTOR" V 3345 2728 50  0000 L CNN
+F 2 "Inductor_THT:L_Axial_L16.0mm_D7.5mm_P7.62mm_Vertical_Fastron_XHBCC" H 3300 2650 50  0001 C CNN
+F 3 "~" H 3300 2650 50  0001 C CNN
+	1    3300 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Antenna AE1
+U 1 1 6093AEFD
+P 3300 1750
+F 0 "AE1" H 3380 1739 50  0000 L CNN
+F 1 "Antenna" H 3380 1648 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Horizontal" H 3300 1750 50  0001 C CNN
+F 3 "~" H 3300 1750 50  0001 C CNN
+	1    3300 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4250 3550 4250
+Wire Wire Line
+	5300 3550 5300 4250
+Wire Wire Line
+	6100 4250 6100 4050
+Wire Wire Line
+	5300 4250 5500 4250
+Connection ~ 5300 4250
+Wire Wire Line
+	5500 3750 5500 4250
+Connection ~ 5500 4250
+Wire Wire Line
+	5500 4250 6100 4250
+Wire Wire Line
+	2600 2600 2600 2250
+$Comp
+L Device:C C2
+U 1 1 60942788
+P 4200 3300
+F 0 "C2" V 4452 3300 50  0000 C CNN
+F 1 "0.22u" V 4361 3300 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 4238 3150 50  0001 C CNN
+F 3 "~" H 4200 3300 50  0001 C CNN
+	1    4200 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 6094A074
+P 1300 3150
+F 0 "BT1" H 1408 3196 50  0000 L CNN
+F 1 "Battery" H 1408 3105 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" V 1300 3210 50  0001 C CNN
+F 3 "~" V 1300 3210 50  0001 C CNN
+	1    1300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2250 2600 2250
+$Comp
+L Transistor_BJT:BF457 Q1
+U 1 1 619D2BD8
+P 2300 3100
+F 0 "Q1" H 2491 3054 50  0000 L CNN
+F 1 "BF457" H 2491 3145 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 2500 3025 50  0001 L CIN
+F 3 "https://www.pcpaudio.com/pcpfiles/transistores/BF457-8-9.pdf" H 2300 3100 50  0001 L CNN
+	1    2300 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BF457 Q2
+U 1 1 619D54AC
+P 3650 3300
+F 0 "Q2" H 3841 3254 50  0000 L CNN
+F 1 "BF457" H 3841 3345 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 3850 3225 50  0001 L CIN
+F 3 "https://www.pcpaudio.com/pcpfiles/transistores/BF457-8-9.pdf" H 3650 3300 50  0001 L CNN
+	1    3650 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3600 5000 3600
+Wire Wire Line
+	5000 3600 5000 3350
+Wire Wire Line
+	5000 3350 5300 3350
+Wire Wire Line
+	4700 3750 4700 4250
+Connection ~ 4700 4250
+Wire Wire Line
+	4700 4250 5300 4250
+Wire Wire Line
+	2600 2250 3300 2250
+Connection ~ 2600 2250
+Wire Wire Line
+	3550 4250 4700 4250
+Connection ~ 3550 4250
+Wire Wire Line
+	2200 2250 2200 2900
+Wire Wire Line
+	2200 3300 2200 4250
+Wire Wire Line
+	2500 3100 2600 3100
+Wire Wire Line
+	2600 2900 2600 3100
+Connection ~ 2600 3100
+Wire Wire Line
+	2600 3100 3300 3100
+Wire Wire Line
+	3300 2900 3300 3100
+Connection ~ 3300 3100
+Wire Wire Line
+	3300 3100 3550 3100
+Wire Wire Line
+	3300 1950 3300 2250
+Connection ~ 3300 2250
+Wire Wire Line
+	3300 2250 3950 2250
+Wire Wire Line
+	3300 2250 3300 2400
+Wire Wire Line
+	4350 3300 4700 3300
+Wire Wire Line
+	4700 3300 4700 3450
+Wire Wire Line
+	3550 3500 3550 4250
+Wire Wire Line
+	3950 3300 3950 2250
+Wire Wire Line
+	3850 3300 3950 3300
+Connection ~ 3950 3300
+Wire Wire Line
+	3950 3300 4050 3300
+$Comp
+L Device:R_US R1
+U 1 1 619EFD91
+P 4400 2250
+F 0 "R1" V 4195 2250 50  0000 C CNN
+F 1 "22k" V 4286 2250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4440 2240 50  0001 C CNN
+F 3 "~" H 4400 2250 50  0001 C CNN
+	1    4400 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 2250 5500 2250
+Wire Wire Line
+	4250 2250 3950 2250
+Connection ~ 3950 2250
+Connection ~ 6100 4250
+Wire Wire Line
+	6200 3450 6100 3450
+Wire Wire Line
+	6100 3750 6100 3450
+Connection ~ 6100 3450
+Wire Wire Line
+	6100 3450 5900 3450
+Wire Wire Line
+	6850 3450 6500 3450
+Wire Wire Line
+	6850 3550 6850 4250
+Wire Wire Line
+	6100 4250 6850 4250
+$Comp
+L power:VCC #PWR03
+U 1 1 619FAEBA
+P 5500 1900
+F 0 "#PWR03" H 5500 1750 50  0001 C CNN
+F 1 "VCC" H 5515 2073 50  0000 C CNN
+F 2 "" H 5500 1900 50  0001 C CNN
+F 3 "" H 5500 1900 50  0001 C CNN
+	1    5500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 619FB399
+P 5500 4550
+F 0 "#PWR04" H 5500 4300 50  0001 C CNN
+F 1 "GND" H 5505 4377 50  0000 C CNN
+F 2 "" H 5500 4550 50  0001 C CNN
+F 3 "" H 5500 4550 50  0001 C CNN
+	1    5500 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4250 5500 4550
+Wire Wire Line
+	5500 1900 5500 2250
+Connection ~ 5500 2250
+$Comp
+L power:VCC #PWR01
+U 1 1 619FCF35
+P 1300 2600
+F 0 "#PWR01" H 1300 2450 50  0001 C CNN
+F 1 "VCC" H 1315 2773 50  0000 C CNN
+F 2 "" H 1300 2600 50  0001 C CNN
+F 3 "" H 1300 2600 50  0001 C CNN
+	1    1300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2600 1300 2950
+$Comp
+L power:GND #PWR02
+U 1 1 619FDB25
+P 1300 3650
+F 0 "#PWR02" H 1300 3400 50  0001 C CNN
+F 1 "GND" H 1305 3477 50  0000 C CNN
+F 2 "" H 1300 3650 50  0001 C CNN
+F 3 "" H 1300 3650 50  0001 C CNN
+	1    1300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3350 1300 3650
+Wire Wire Line
+	5500 2250 5500 3150
+$EndSCHEMATC

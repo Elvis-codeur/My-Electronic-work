@@ -1,0 +1,27 @@
+*SRC=74ALS00A;74ALS00A;TTL;74ALSxx;2 input NAND gate
+*SYM=NAND2
+*74ALS00A QUADRUPLE 2-INPUT POSITIVE-NAND GATES
+***
+.subckt 74ALS00A in1 in2 out
+
+
+
+adc_bridge0 [in1] [adc_inter0] adc_buff
+adc_bridge1 [in2] [adc_inter1] adc_buff
+
+*FAMILY TTLin TTLin TTLout
+*pinout M14A 1 2 3;4 5 6;9 10 8;12 13 11:VCC=14 GND=7
+*pinout M14D 1 2 3;4 5 6;9 10 8;12 13 11:VCC=14 GND=7
+*pinout N14A 1 2 3;4 5 6;9 10 8;12 13 11:VCC=14 GND=7
+anand [adc_inter0 adc_inter1] dac_inter0 ls_nand 
+dac_bridge0 [dac_inter0] [out] dac_buff
+
+
+.model ls_nand d_nand(rise_delay=7n fall_delay=5n)
+.model adc_buff adc_bridge(in_low = 0.3 in_high = 3.5)
+.model dac_buff dac_bridge(out_low = 0.7 out_high = 3.5 out_undef = 2.2
++input_load = 5.0e-12 t_rise = 50e-9
++t_fall = 20e-9)
+.ends
+*
+*
